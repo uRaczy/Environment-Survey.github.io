@@ -1,0 +1,79 @@
+
+html, body {
+    height: 100%;
+    font-size: 1.2em;
+  }
+
+@media only screen and (max-width: 768px){
+    h1, h2, h3 {
+        font-size: 1.2rem;
+    }
+}
+
+.background {
+    height: 100%;
+    background-image: url("foto/greenfuture_min.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.grid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 3fr 2fr 3fr;
+}
+
+.pasek {
+    height: 90%;
+    /* border: blueviolet 1px solid; */
+    align-self: flex-start;
+    grid-row-start: 2;
+    background: rgba(0, 0, 0, 0.6);
+    color: azure;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.napis {
+    font-family: 'Quicksand', sans-serif;
+    /* border: blueviolet 1px solid; */
+    place-self: center;
+    padding-top: 1.5em;
+    color: azure;
+}
+
+.button {
+    place-self: center;
+    cursor:pointer;
+    user-select: none;
+    border: rgba(224, 157, 31) 3px;
+    background-color: rgba(224, 157, 31, 0.7);
+    border-style: outset;
+    margin: 5px 10px 5px 10px;
+    border-radius: 50px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.button h3 {
+    margin: 10px 10px 10px 10px;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.button:active {
+    
+    border: rgba(224, 157, 31, 0.5) 3px;
+    background-color: rgb(224, 157, 31, 0.5);
+    color: rgba(255, 255, 255, 0.6)
+}
